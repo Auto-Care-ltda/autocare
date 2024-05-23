@@ -10,8 +10,8 @@
 
     <header>
         <div class="cabecalho-container">
-            <a href="#" class="logo-cabecalho"><img src="imagem/autocare_logo_canto-removebg-preview.png" alt="AutoCare Logo"></a> 
-            <nav class="navegacao-cabecalho">
+            <a href="#" class="logo-cabecalho"><img src="imagem/autocare_logo_canto-removebg-preview.png" alt="AutoCare Logo" role="img"></a> 
+            <nav class="navegacao-cabecalho" aria-label="Menu principal">
                 <ul class="lista-navegacao">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
@@ -28,16 +28,16 @@
         <section class="secao-criar-conta"> 
             <div class="form-container">
                 <h1>Bem vindo ao <span class="destaque">LOGIN</span></h1>
-                <img src="imagem/autocare_logo_centro.png" alt="AutoCare Logo" width="150"> 
+                <img src="imagem/autocare_logo_centro.png" alt="AutoCare Logo" width="150" role="img"> 
 
                 <form id="form-entrar" onsubmit="event.preventDefault();"> 
-                    <label class="form-entrar-alinha">Usuário:</label>
+                    <label for="usuario" class="form-entrar-alinha">Usuário:</label>
                     <input type="text" id="usuario" placeholder="Digite seu usuário" required>
 
-                    <label class="form-entrar-alinha">CPF:</label>
+                    <label for="cpf" class="form-entrar-alinha">CPF:</label>
                     <input type="text" id="cpf" placeholder="000.000.000-00" required>
 
-                    <label class="form-entrar-alinha">Senha:</label>
+                    <label for="senha" class="form-entrar-alinha">Senha:</label>
                     <input type="password" id="senha" placeholder="Digite sua senha" required>
 
                     <input type="submit" value="ENTRAR"> 
