@@ -9,6 +9,12 @@
     --cor-hover: #2952b3;
 }
 
+/* 
+  Estilos globais aplicados por padrão (desktops e telas maiores). 
+  Media Queries serão usadas para adaptar o layout para telas menores (tablets e celulares).
+*/
+
+
 html, body {
     height: 100%;
 }
