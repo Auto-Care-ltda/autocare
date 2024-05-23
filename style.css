@@ -1,0 +1,920 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,900&family=Righteous&display=swap');
+
+:root {
+    --cor-primaria: #3A6AD6;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #333;
+    --cor-quarternaria: #F2F2F2;
+    --cor-hover: #2952b3;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--cor-quarternaria);
+    padding: 20px 0;
+    border-bottom: 10px solid var(--cor-primaria);
+    flex-shrink: 0;
+}
+
+.cabecalho-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.logo-cabecalho {
+    margin-bottom: 1px;
+    margin-left: 10px;
+}
+
+.navegacao-cabecalho {
+    display: flex;
+    gap: 20px;
+}
+
+.lista-navegacao {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-navegacao a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.lista-navegacao a:hover {
+    color: var(--cor-hover);
+}
+
+.link-criar-conta {
+    font-weight: 600;
+}
+
+.secao-hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.circulo-externo {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    border: 50px solid var(--cor-primaria);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.circulo-interno {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.autocare_logo_centro {
+    width: 400px;
+}
+
+.conteudo-hero {
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+
+.conteudo-hero p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.botao-hero {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.botao-hero:hover {
+    background-color: var(--cor-hover);
+}
+
+.titulo-duvidas{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    color: var(--cor-primaria);
+}
+
+.faq{
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+
+.faq-perguntas{
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+
+}
+
+.faq-item{
+    font-size: 1rem;
+    color: var(--cor-terciaria);
+}
+
+.texto-duvidas{
+    font-size: 1.2rem;
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+
+}
+
+#form-contato {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#form-contato label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+#form-contato input[type="text"],
+#form-contato input[type="email"],
+#form-contato textarea {
+    width: calc(100% - 40px); 
+    padding: 10px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+#form-contato textarea {
+    height: 150px;
+    resize: none; 
+}
+
+#form-contato input[type="submit"] {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+#form-contato input[type="submit"]:hover {
+    background-color: var(--cor-hover);
+}
+
+
+.secao-criar-conta {
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-criar-conta-alinha {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+
+
+.form-entrar-alinha{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .form-container h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: var(--cor-terciaria);
+    }
+    
+    .form-container .destaque {
+        color: var(--cor-primaria);
+    }
+    
+    .form-container img {
+        margin: 20px 0;
+    }
+    
+   
+    #form-criar-conta input[type="text"],
+    #form-criar-conta input[type="tel"],
+    #form-criar-conta input[type="email"],
+    #form-criar-conta input[type="password"],
+    #form-criar-conta input[type="number"], 
+    #form-entrar input[type="text"],
+    #form-entrar input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid var(--cor-terciaria);
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        background-color: #f9f9f9;
+    }
+    
+   
+    #form-criar-conta input[type="submit"],
+    #form-entrar input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    
+    .form-criar-conta-alinha img {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px; 
+    }
+    
+   
+    .secao-contato {
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    .titulo-contato {
+        font-size: 2.5rem;
+        color: var(--cor-primaria);
+        margin-bottom: 20px;
+    }
+    
+    .texto-contato {
+        font-size: 1.2rem;
+        color: var(--cor-terciaria);
+        margin-bottom: 30px;
+    }
+    
+   
+    #form-contato {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid var(--cor-primaria);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    #form-contato label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    #form-contato input[type="text"],
+    #form-contato input[type="email"],
+    #form-contato textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    #form-contato textarea {
+        height: 150px;
+        resize: vertical;
+    }
+    
+    .botao-contato {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+        border: none;
+        border-radius: 5px;
+        padding: 12px 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: block;
+        width: 100%;
+    }
+    
+    .botao-contato:hover {
+        background-color: var(--cor-hover);
+    }
+    
+    
+    #form-criar-conta input[type="submit"]:hover,
+    #form-entrar input[type="submit"]:hover {
+        background-color: var(--cor-hover); 
+        color: var(--cor-secundaria); 
+        cursor: pointer; 
+    }
+    
+    .dashboard {
+        padding: 2em;
+        background-color: #fff;
+        margin: 1em 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .dashboard h2 {
+        color: #333;
+        margin-bottom: 1em;
+        font-size: 3rem;
+        
+    }
+    
+    .dashboard .resumo-veiculo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        font-size: 1.2rem;
+    }
+    
+    .dashboard .resumo-veiculo .veiculo-info {
+        flex: 1;
+        margin-right: 1em;
+        font-size: 1.2rem;
+    }
+    
+    .dashboard .resumo-veiculo .veiculo-foto img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .dashboard h3 {
+        color: #444;
+        margin-bottom: 0.5em;
+        font-size: 1.2rem;
+    }
+    
+    .dashboard p, .dashboard ul {
+        color: #666;
+        font-size: 1.2rem;
+    }
+    
+    .dashboard ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .dashboard li {
+        background-color: #f9f9f9;
+        margin-bottom: 0.5em;
+        padding: 0.5em;
+        border-radius: 4px;
+    }
+    
+    
+
+    
+    .notificacoes-alertas {
+        padding: 2em;
+        background-color: #ffefef;
+        margin: 1em 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .notificacoes-alertas h2 {
+        color: #e74c3c;
+        margin-bottom: 1em;
+        font-size: 1.2rem;
+    }
+    
+    .notificacoes-alertas .alertas {
+        color: #c0392b;
+        padding: 0.5em;
+        border: 1px solid #e74c3c;
+        border-radius: 4px;
+        background-color: #ffecec;
+    }
+    
+   
+    .artigos-dicas {
+        padding: 2em;
+        background-color: #fff;
+        margin: 1em 0;
+        border-radius:8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .artigos-dicas h2, .artigos-dicas h3 {
+            color: #333;
+            margin-bottom: 1em;
+            font-size: 1.2rem;
+
+        }
+        
+        .artigos-dicas p {
+            color: #666;
+            font-size: 1.2rem;
+
+        }
+        
+       
+        .servicos-ofertas {
+            padding: 2em;
+            background-color: #fff;
+            margin: 1em 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .servicos-ofertas h2 {
+            color: #333;
+            margin-bottom: 1em;
+            font-size: 1.2rem;
+
+        }
+        
+        .servicos-ofertas .servicos {
+            color: #666;
+        }
+        
+        
+        .mapa-oficinas {
+            padding: 2em;
+            background-color: #fff;
+            margin: 1em 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mapa-oficinas h2 {
+            color: #333;
+            margin-bottom: 1em;
+            font-size: 1.2rem;
+
+        }
+        
+        #mapa {
+            height: 400px;
+            background-color: #eaeaea;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        
+        
+        .rodape {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            padding: 20px 0;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        /* responsividade */
+
+        /* responsividade celulares padrão */
+
+
+        @media (max-width: 480px) {
+            header {
+                padding: 5px 0;
+                text-align: center;
+            }
+        
+            .cabecalho-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .logo-cabecalho {
+                display: block;
+                margin: 10px auto;
+                padding-left: 100px;
+            }
+        
+            .navegacao-cabecalho {
+                font-size: 10px;
+                width: 100%;
+                padding-left: 35px;
+                justify-content: center;
+            }
+        
+            .lista-navegacao {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .circulo-externo {
+                width: 325px;
+                height: 325px;
+                border: 15px solid var(--cor-primaria);
+            }
+        
+            .circulo-interno {
+                width: 300px;
+                height: 300px;
+            }
+        
+            .autocare_logo_centro {
+                width: 100px;
+            }
+        
+            .conteudo-hero p {
+                font-size: 9px;
+                text-align: center;
+            }
+        
+            .botao-hero {
+                padding: 8px 16px;
+            }
+        
+            .rodape {
+                padding: 15px;
+                font-size: 12px;
+            }
+        
+            .titulo-duvidas{
+                font-size: 2rem;
+            }
+        
+            
+            .form-container {
+                padding: 20px;
+                margin: 20px; 
+                background-color: #fff; 
+                border-radius: 10px; 
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+            }
+        
+         
+            #form-criar-conta input[type="text"],
+            #form-criar-conta input[type="tel"],
+            #form-criar-conta input[type="email"],
+            #form-criar-conta input[type="password"],
+            #form-criar-conta input[type="number"],
+            #form-entrar input[type="text"],
+            #form-entrar input[type="password"] {
+                font-size: 12px;
+            }
+        
+            
+            #form-criar-conta input[type="submit"],
+            #form-entrar input[type="submit"] {
+                font-size: 14px;
+            }
+        
+            .titulo-contato {
+                font-size: 2rem;
+            }
+        
+            .texto-contato {
+                font-size: 1rem;
+            }
+        
+            #form-contato {
+                max-width: 95%;
+            }
+        }
+        
+        /* estilo celulares menores */
+        @media (max-width: 390px) and (min-width: 350px) {
+            header {
+                padding: 10px 0;
+                text-align: center;
+            }
+        
+            .cabecalho-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .logo-cabecalho {
+                display: block;
+                margin: 10px auto;
+                padding-left: 100px;
+            }
+        
+            .navegacao-cabecalho {
+                gap: 5px;
+                font-size: 9px;
+                width: 100%;
+                padding-left: 35px;
+                justify-content: center;
+            }
+        
+            .lista-navegacao {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .secao-hero {
+                padding-right: 5px;
+            }
+        
+            .circulo-externo {
+                width: 300px;
+                height: 300px;
+                border: 10px solid var(--cor-primaria);
+            }
+        
+            .circulo-interno {
+                width: 300px;
+                height: 300px;
+            }
+        
+            .autocare_logo_centro {
+                width: 80px;
+            }
+        
+            .conteudo-hero p {
+                font-size: 8px;
+            }
+        
+            .botao-hero {
+                width: auto;
+                padding: 6px 12px;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+        
+            .rodape {
+                padding: 10px;
+                font-size: 12px;
+            }
+        
+            .form-container {
+                padding: 15px; 
+                margin: 15px; 
+            }
+        }
+      
+        @media (max-width: 340px) {
+            header {
+                padding: 10px 0;
+                text-align: center;
+            }
+        
+            .cabecalho-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .logo-cabecalho {
+                display: block;
+                margin: 10px auto;
+                padding-left: 100px;
+            }
+        
+            .navegacao-cabecalho {
+                gap: 5px;
+                font-size: 8px;
+                width: 100%;
+                padding-left: 35px;
+                justify-content: center;
+            }
+        
+            .lista-navegacao {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .secao-hero {
+                padding-right: 5px;
+            }
+        
+            .circulo-externo {
+                width: 250px;
+                height: 250px;
+                border: 10px solid var(--cor-primaria);
+            }
+        
+            .circulo-interno {
+                width: 250px;
+                height: 250px;
+            }
+        
+            .autocare_logo_centro {
+                width: 80px;
+            }
+        
+            .conteudo-hero p {
+                font-size: 8px;
+            }
+        
+            .botao-hero {
+                width: auto;
+                padding: 6px 12px;
+                border-radius: 5px;
+                font-size: 10px;
+            }
+        
+            .rodape {
+                padding: 10px;
+                font-size: 12px;
+            }
+        
+            .form-container {
+                padding: 15px; 
+                margin: 15px; 
+            }
+        }
+
+
+            /* Estilos para tablets */
+            @media (min-width: 481px) and (max-width: 850px) {
+
+            header {
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .cabecalho-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo-cabecalho {
+                display: block;
+                margin: 10px auto;
+                padding-left: 100px;
+            }
+
+            .navegacao-cabecalho {
+                gap: 5px;
+                font-size: 14px;
+                width: 100%;
+                padding-left: 35px;
+                justify-content: center;
+            }
+
+            .lista-navegacao {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .secao-hero {
+                padding-right: 20px;
+            }
+
+            .circulo-externo {
+                width: 600px;
+                height: 600px;
+                border: 10px solid var(--cor-primaria);
+            }
+
+            .circulo-interno {
+                width: 600px;
+                height: 600px;
+            }
+
+            .autocare_logo_centro {
+                width: 300px;
+            }
+
+            .conteudo-hero p {
+                font-size: 8px;
+            }
+
+            .botao-hero {
+                width: auto;
+                padding: 6px 12px;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+
+            
+            .titulo-duvidas {
+                font-size: 2.5rem;
+            }
+
+            
+            .texto-duvidas {
+                font-size: 1.2rem;
+            }
+
+            
+            .form-container {
+                padding: 30px;
+                margin: 20px;
+            }
+
+            
+            #form-contato input[type="text"],
+            #form-contato input[type="email"],
+            #form-contato textarea {
+                width: calc(100% - 20px);
+                padding: 15px;
+            }
+
+            
+            .botao-contato {
+                padding: 15px 25px;
+                font-size: 16px;
+            }
+
+            
+            .titulo-contato {
+                font-size: 2rem;
+            }
+
+           
+            .texto-contato {
+                font-size: 1.2rem;
+            }
+        }

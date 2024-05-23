@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare - Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initMap()">
+    <header>
+        <div class="cabecalho-container">
+            <a href="#" class="logo-cabecalho"><img src="imagem/autocare_logo_canto-removebg-preview.png" alt="AutoCare Logo"></a> 
+            <nav class="navegacao-cabecalho">
+                <ul class="lista-navegacao">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="duvidas.html">Dúvidas</a></li>
+                    <li><a href="entrar.html">Entrar</a></li>
+                    <li><a href="criar_conta.html" class="link-criar-conta">Criar conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Bem-vindo de volta, Adriano</h2>
+            <div class="resumo-veiculo">
+                <div class="veiculo-info">
+                    <h3>Resumo do Veículo</h3>
+                    <p>Modelo: Chevrolet Onix</p>
+                    <p>Ano: 2017</p>
+                    <p>Quilometragem: 60.000km</p>
+                    <p>Status de Manutenção: Troca de óleo necessária!</p>
+                </div>
+                <div class="veiculo-foto">
+                    <img src="imagem/carro-cliente.png" alt="Foto do Veículo do Cliente">
+                </div>
+            </div>
+
+            <div class="proximas-manutencoes">
+                <h3>Próximas Manutenções</h3>
+                <ul>
+                    <li>Troca de óleo - 01/05/2024</li>
+                    <li>Revisão completa - 15/07/2024</li>
+                </ul>
+            </div>
+
+            <div class="historico-servicos">
+                <h3>Histórico de Serviços</h3>
+                <ul>
+                    <li>Troca de óleo - 01/03/2024</li>
+                    <li>Alinhamento - 15/04/2024</li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <section class="notificacoes-alertas">
+            <h2>Notificações e Alertas</h2>
+            <div class="alertas">
+                <p>Alerta de manutenção urgente: Troca de óleo atrasada!</p>
+            </div>
+        </section>
+
+        <section class="artigos-dicas">
+            <h2>Artigos e Dicas</h2>
+            <article>
+                <h3>Como economizar combustível</h3>
+                <p>Dicas de direção eficiente e manutenção para economizar combustível.</p>
+            </article>
+        </section>
+
+        <section class="servicos-ofertas">
+            <h2>Serviços e Ofertas</h2>
+            <div class="servicos">
+                <p>Troca de óleo a partir de R$ 99,00</p>
+            </div>
+        </section>
+
+        <section class="mapa-oficinas">
+            <h2>Mapa de Oficinas Parceiras</h2>
+            <div id="mapa"></div> 
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>© 2024 AutoCare. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "ac72491c-b430-4b86-8b39-6bbb25826c86", 
+            region: "au-syd", 
+            serviceInstanceID: "ba46dfd3-5989-431f-a438-a7031930725a", 
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        }, 0);
+    </script>
+
+    <script>
+       
+        function initMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var userLocation = {
+                        lat: position.coords.latitude,
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    var mapOptions = {
+                        center: userLocation, 
+                        zoom: 12 
+                    };
+
+                   
+                    var map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+
+                    
+                    var marker = new google.maps.Marker({
+                        position: userLocation,
+                        map: map,
+                        title: "Sua localização"
+                    });
+                });
+            } else {
+               
+                alert("Geolocation não é suportado por este navegador.");
+            }
+        }
+    </script>
+
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIfcNZGQskoH3QQhk2dW86h5V_ElHsrpY&callback=initMap" async defer></script>
+</body>
+</html>

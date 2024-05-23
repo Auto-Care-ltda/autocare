@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - AutoCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="cabecalho-container">
+            <a href="#" class="logo-cabecalho"><img src="imagem/autocare_logo_canto-removebg-preview.png" alt="AutoCare Logo"></a> 
+            <nav class="navegacao-cabecalho">
+                <ul class="lista-navegacao">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="duvidas.html">Dúvidas</a></li>
+                    <li><a href="entrar.html">Entrar</a></li>
+                    <li><a href="criar_conta.html" class="link-criar-conta">Criar conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-criar-conta">
+                <div class="form-container">
+                    <h1>Bem vindo ao <span class="destaque">CADASTRO DO VEÍCULO</span></h1>
+                    <img src="imagem/autocare_logo_centro.png" alt="AutoCare Logo" width="150"> 
+
+                    <form id="form-criar-conta">
+                        <label class="form-criar-conta-alinha">Modelo:</label>
+                        <input type="text" id="modelo" placeholder="Digite o modelo do veículo" required>
+
+                        <label class="form-criar-conta-alinha">Ano:</label>
+                        <input type="number" id="ano" placeholder="Digite o ano do veículo" required>
+
+                        <label class="form-criar-conta-alinha">Cor:</label>
+                        <input type="text" id="cor" placeholder="Digite a cor do veículo" required>
+
+                        <label class="form-criar-conta-alinha">Placa:</label>
+                        <input type="text" id="placa" placeholder="Digite a placa do veículo" required>
+
+                        <label class="form-criar-conta-alinha">Marca:</label>
+                        <input type="text" id="marca" placeholder="Digite a marca do veículo" required>
+
+                        <input type="submit" value="CADASTRAR">
+                    </form>
+                </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>© 2024 AutoCare. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('form-criar-conta').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'pagina_principal.html'; 
+        });
+    </script>
+
+</body>
+</html>
